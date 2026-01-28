@@ -1,0 +1,28 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    color: white;
+}
+
+#area2 {
+    font-weight: bold;
+    font-family: monospace;
+    background-color: green;
+}
+
+.principal {
+    display: flex;
+    gap: 5px;
+    background: rgba(128, 128, 128, 0.479);
+}
+
+p {
+    margin: 0;
+    padding: 6px 3px;
+}
+
+.maior {
+    height: 150px;
+    width: 150px;
+}

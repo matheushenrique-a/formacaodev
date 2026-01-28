@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        .azul {
+            background-color: dodgerblue;
+        }
+
+        .vermelho {
+            background: crimson;
+        }
+
+        .verde {
+            background: forestgreen;
+        }
+
+        .container {
+            font-size: 0;
+        }
+
+        span {
+            font-size: 16px;
+        }
+        div {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    Bomdia
+    <div class="container">
+        <span class="azul">1</span>
+        <span class="vermelho">2</span>
+        <span class="verde">3</span>
+    </div>
+    <hr>
+    <div class="azul">1</div>
+    <div class="vermelho">2</div>
+    <div class="verde">3</div>
+</body>
+</html>

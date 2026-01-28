@@ -1,0 +1,15 @@
+body {
+    border: 3px solid red;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    color: white;
+}
+
+div, h1 {
+    border: inherit;
+}
+
+p {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
