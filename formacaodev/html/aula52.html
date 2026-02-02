@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Especificidade CSS #01</title>
+    <style>
+        div.outer p {
+            color: orange;
+        }
+
+        div:not(.outer) p {
+            color: lime;
+        }
+
+        * #foo {
+            color: green;
+        }
+
+        *[id="foo"] {
+            color: black;
+        }
+
+        body h1 {
+            color: green;
+        }
+
+        html h1 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <p>Esta é a div outer.</p>
+        <div class="inner">
+            <p>Este texto está na div inner.</p>
+        </div>
+        <div>
+            <p>Eu sou um elemento HTML.</p>
+        </div>
+    </div>
+    <p id="foo">Eu sou um simples texto.</p>
+    <h1>Este é um título.</h1>
+</body>
+</html>
