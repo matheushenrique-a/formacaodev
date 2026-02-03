@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        main {
+            display: flex;
+            gap: 1px;
+            flex-wrap: wrap;
+            background: grey;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 0;;
+        }
+
+        div {
+            background: black;
+            height: 100px;
+            flex-basis: 33%;
+        }
+
+        #div1 {
+            background: linear-gradient(blue, green, yellow, red, purple);
+        }
+
+        #div2 {
+            background: linear-gradient(315deg, blue, green, yellow, red, purple);
+        }
+
+        #div3 {
+            background: linear-gradient(to left top, blue, green, yellow, red, purple);
+        }
+
+        #div4 {
+            background: linear-gradient(in oklab, blue, green, yellow, red, purple);
+        }
+
+        #div5 {
+            background: linear-gradient(in hsl, blue, green, yellow, red, purple);
+        }
+
+        #div6 {
+            background: linear-gradient(in hsl longer hue, blue, purple);
+        }
+
+        #div7 {
+            background: linear-gradient(0deg, blue, green 50%, red);
+        }
+
+        #div8 {
+            background: linear-gradient(.25turn, red, 50%, blue);
+        }
+
+        #div9 {
+            background: linear-gradient(45deg, red 50%, blue 50%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+        <div id="div8"></div>
+        <div id="div9"></div>
+    </main>
+</body>
+</html>
