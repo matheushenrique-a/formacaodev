@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades #05</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+
+        .externa {
+            background: orange;
+            height: 400px;
+            width: calc(50% - 100px);
+            padding: 50px;
+            position: relative;
+        }
+
+        .interna, .interna2 {
+            background: mediumvioletred;
+            height: calc(50% - 50px);
+            width: calc(50% - 50px);
+            position: absolute;
+        }
+
+        .interna2 {
+            top: 50px;
+            right: 50px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="externa">
+        <div class="interna"></div>
+        <div class="interna2"></div>
+    </div>
+</body>
+</html>

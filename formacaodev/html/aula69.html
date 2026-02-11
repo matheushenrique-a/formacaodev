@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            height: 300dvh;
+        }
+
+        div {
+            padding: 30px;
+            border: solid 5px;
+        }
+
+        .static {
+            background: dodgerblue;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: purple;
+        }
+
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 25px;
+            background: forestgreen;
+            overflow: hidden;
+        }
+
+        .absolute {
+            position: absolute;
+            background: crimson;
+            top: 0;
+            right: 0;
+        }
+
+        .sticky {
+            position: sticky;
+            background: #555;
+            top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">Estático (padrão)</div>
+    <div class="fixed">Fixo</div>
+    <div class="relative">Relativo</div>
+    <div class="absolute">Absoluto</div>
+    <div class="relative">Relativo
+        <div class="absolute">Absoluto</div>
+    </div>
+    <div class="sticky">Sticky</div>
+</body>
+</html>
